@@ -81,20 +81,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M&&ActivityCompat.checkSelfPermission(this, mPermission)
+                != PackageManager.PERMISSION_GRANTED)
         {
-            try {
-                if (ActivityCompat.checkSelfPermission(this, mPermission)
-                        != PackageManager.PERMISSION_GRANTED) {
-
-                    ActivityCompat.requestPermissions(this,
-                            new String[]{mPermission}, REQUEST_CODE_PERMISSION);
-
-                    // If any permission above not allowed by user, this condition will execute every time, else your else part will work
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            ActivityCompat.requestPermissions(this, new String[]{mPermission}, REQUEST_CODE_PERMISSION);
         }
         else
         {
