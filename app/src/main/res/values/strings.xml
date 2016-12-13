@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">sizzleTest</string>
+    <string name="kontakt_io_api_key">dKaQwrNNiiSDXgOjQRnDbDMigMnOtbTn</string>
+    <string name="notification_preference_key">sjsj.sizzletest.notification_preference_key</string>
+    <string name="notification_id">notification_id</string>
 </resources>

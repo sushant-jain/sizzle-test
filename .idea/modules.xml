@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sizzleTest.iml" filepath="$PROJECT_DIR$/sizzleTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sizzle-test.iml" filepath="$PROJECT_DIR$/sizzle-test.iml" />
     </modules>
   </component>
 </project>
